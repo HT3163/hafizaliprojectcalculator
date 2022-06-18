@@ -1,0 +1,129 @@
+
+
+#navcgpa{
+margin-top: -500px;
+display: block;
+width: 1070px;
+margin-left: -200px;
+}
+
+
+ h1,
+ h2, 
+ h3, 
+ h4,
+ h5,
+ h6{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #0c7b93 0%, #00a8cc 100% );
+}
+
+.navcgpa {
+    position: absolute;
+    width: 100%;
+}
+
+
+.cgpa_container{
+width: 500px;
+height: auto;
+border: 1px solid red;
+border-radius: 10px;
+box-shadow: inset 5px 5px 5px 0px rgb(red, green, blue),
+ 7px 7px 20px 0px rgba(0,0,0,0.2), 4px 4px 5px 0px rgba(0,0,0,0.1);
+ margin-top: 150px;
+margin-left: -700px;
+
+}
+/* cgpa container > cgpa title css part. */
+.cgpa_container > .cgpa_title{
+width: 497px;
+height: 50px;
+background-color: #00abfa;
+text-align: center;
+line-height: 50px;
+font-family: Bahnschrift semiBold;
+color: #fff;
+border-radius: 10px 10px 0px 0px;
+
+}
+/* cgpa container > cgpa input css part. */
+.cgpa_container > input{
+border: none;
+background-color: #fff;
+outline: none;
+width: 220px;
+height: 40px;
+border: 1px solid white;
+text-align: center;
+font-family: tahoma;
+font-weight: bold;
+color: black;
+margin:10px;
+}
+/* cgpa container > cgpa input placeholder css part. */
+::placeholder{
+    color: black;
+    font-size: 15px;
+}
+/* cgpa container > cgpa output css part. */
+.cgpa_container  .cgpa_output{
+width: 100px;
+margin-left: 19px;
+}
+/* cgpa container > cgpa output h1 css part. */
+.cgpa_container .cgpa_output h1{
+    font-family: arial;
+font-size: 35px;
+margin-top: 25px;
+color: lightcoral;
+width: 300px;
+}
+/* cgpa container > cgpa output >btnreset css part. */
+/* cgpa container > cgpa output >btnreset css part. */
+.cgpa_container .cgpa_output #btn_re ,
+ .cgpa_container .cgpa_output #btn_sum {
+border: none;
+background-color: #00abfa;
+outline: none;
+font-size: 25px;
+font-family: roboto slab;
+cursor: pointer;
+border-radius: 15px;
+margin: 25px 0px 25px 0px;
+color: #fff;
+box-shadow: inset 5px 4px 5px 0px black,black,black;
+padding: 5px 20px;
+
+}
+.cpga_container .cgpa_output #btn_re{
+    margin-right:15px ;
+}
+/* cgpa container > cgpa output >btnreset css part. */
+/* cgpa container > cgpa output >btnreset css part. */
+.cgpa_container .cgpa_output #btn_re:active ,
+ .cgpa_container .cgpa_output #btn_sum:active {
+box-shadow: inset 5px 5px 5px 0px black,black, black;
+
+
+ } 
+
+
+
+
+
+
+
+
+
+
+

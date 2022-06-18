@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gpa calculator.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+ rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+ crossorigin="anonymous">
+  <link rel="stylesheet" href="css/first.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+
+
+  
+
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar res-nabar-hei">
+      <ul class="leftNav res-nav-elem-vis">
+          <img class="logo" src="img/FaceApp_1616954318165.jpg" alt="ProgrammingWithHT">
+          <li><a href="first.html" class="animationNava">Home</a></li>
+          <li><a href="grade.html" class="animationNava">Grade</a></li>
+          <li><a href="gpa.html" class="animationNava">GPA</a></li>
+          <li><a href="cgpa.html" class="animationNava">CGPA</a></li>
+          <li><a href="about-us.html" class="animationNava">About Us</a></li>
+      </ul>
+      <div class="rightNav res-nav-elem-vis">
+          <input class="navSearch" type="text" placeholder="Search">
+          <button class="btn">Login</button>
+      </div>
+      <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+  </nav>
+
+
+
+
+    <div class="wrapper">
+        <h1>Gpa Calculator.</h1>
+        <div class="form-row">
+           <div class="col">
+             <input id="course-code" class="form-control" type="text" placeholder="Course code.">
+        </div>
+        <div class="col">
+          <input id="credit-hours" class="form-control" type="number" placeholder="Credit hours." min="1" max="15">
+          </div>
+          <div class="col">
+            <select id="grade" class="form-control">
+                <option value=""> Grade.</option>
+                <option value="5" >A.</option>
+                <option value="4" >B.</option>
+                <option value="3" >C.</option>
+                <option value="2" >D.</option>
+                <option value="1" >E.</option>
+                <option value="0" >F.</option>
+            </select>
+          </div>
+          <div class="col">
+           <input id="add" class="btn btn-primary" type="button" value="Add.">
+          </div>
+
+          <table id="table" class="table table-bordered display-none">
+              <thead>
+                  <tr>
+                    <th>Course code.</th>
+                    <th>Credit Hours.</th>
+                    <th>Grade.</th>
+                  </tr>
+              </thead>
+
+              
+              <tbody id="tbody">
+
+              </tbody>
+
+              <tfoot id="tfoot">
+
+              </tfoot>
+
+          </table>
+
+
+          <div class="row">
+              <div class="col">
+                  <input id="calc-gpa" class="btn btn-success display-none" type="button" value="Calculate Gpa." >
+         </div>
+              <div class="col">
+                <input id="clear" class="btn btn-warning display-none" type="button" value="Clear." >
+              </div>
+          </div>     
+
+
+                        <!--  <div class="col">
+                <input id="crscd" class="form-control" type="text " placeholder="Course Code.">
+            </div>
+            <div class="col">
+                <input id="crdhs" class="form-control" type="number " placeholder="Credit Hours." min="1" max="15">
+            </div>
+            <div class="col">    
+               <select id="grd" class="form-control">
+                 <option value=""  >Grade.</option>
+                 <option value="5" >A.</option>
+                 <option value="4" >B.</option>s="v</option>
+                 <option value="3" >C.</option>
+                 <option value="2" >D.</option>
+                 <option value="1" >E.</option>
+                 <option value="0" >F.</option>
+               </select>
+            </div>
+            <div class="col">
+              <input id="add"   class="btn btn-primary"  type="button" value="Add." >
+            </div>
+        </div>
+    </div>                   -->
+
+
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet"   href="gpa.css">
+    <script src="first.js">   </script>  
+</body>
+</html>

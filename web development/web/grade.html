@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade calculator.</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+ rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+ crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/first.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body style="background-color: pink !important;">
+
+
+
+
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar res-nabar-hei">
+        <ul class="leftNav res-nav-elem-vis">
+            <img class="logo" src="img/FaceApp_1616954318165.jpg" alt="ProgrammingWithHT">
+            <li><a href="first.html" class="animationNava">Home</a></li>
+            <li><a href="grade.html" class="animationNava">Grade</a></li>
+            <li><a href="gpa.html" class="animationNava">GPA</a></li>
+            <li><a href="cgpa.html" class="animationNava">CGPA</a></li>
+            <li><a href="about-us.html" class="animationNava">About Us</a></li>
+        </ul>
+        <div class="rightNav res-nav-elem-vis">
+            <input class="navSearch" type="text" placeholder="Search">
+            <button class="btn">Login</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+
+
+<div class="container fw-bold">
+    <div class="row">
+        <div class="col-8 m-auto bg-dark text-white p-3 mt-5">
+            <h4>Grade Calculating System.</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-md-12 bg-white p-5 m-auto d-flex justify-content-around">
+
+
+
+
+            <div class="col-md-4">
+                <form id="frm1">
+                    <div>
+                    <label>English.</label><br>
+                    <input id="bk1" type="number" name="" placeholder="Enter marks here.">
+                    </div>
+                    
+                    
+                    <div>
+                        <label>Urdu.</label><br>
+                        <input id="bk2" type="number" name="" placeholder="Enter marks here.">
+                        </div>
+                    
+                    <div>
+                    <label>Mathematics.</label><br>
+                    <input id="bk3" type="number" name="" placeholder="Enter marks here.">
+                    </div>
+                    
+                    
+                    <div>
+                        <label>Physics.</label><br>
+                        <input id="bk4" type="number" name="" placeholder="Enter marks here.">
+                        </div>
+                     
+                    
+                    <div>
+                    <label>Chemistry.</label><br>
+                    <input id="bk5" type="number" name="" placeholder="Enter marks here.">
+                    </div>
+                    
+                    
+                    <div>
+                        <label>Biology/Computer.</label><br>
+                        <input id="bk6" type="number" name="" placeholder="Enter marks here.">
+                        </div>
+                    
+                    
+                        <div>
+                            <label>Islamic Studies.</label><br>
+                            <input id="bk7" type="number" name="" placeholder="Enter marks here.">
+                            </div>
+                    
+                            <div>
+                                <label>Pak studies.</label><br>
+                                <input id="bk8" type="number" name="" placeholder="Enter marks here.">
+                                </div>
+                                <br>
+                                <button class="btn btn-warning col-12"  onclick=" return calc()">Result.</button>
+                    
+ </form>                    
+            </div>
+
+
+
+            <div class="col-md-4 d-flex align-items-center">
+    <table class="table table-bordered border-dark">
+<tr>
+    <td>Total marks.</td>
+    <td>800.</td>
+</tr>
+<tr>
+    <td>Obtained marks.</td>
+    <td id="obt"></td>
+</tr>
+
+<tr>
+    <td>Percentage.</td>
+    <td id="pnt"></td>
+</tr>
+
+<tr>
+    <td>Grade.</td>
+    <td id="gd"></td>
+</tr>
+
+<tr>
+    <td>Remarks.</td>
+    <td id="rm"></td>
+</tr>
+
+    </table>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+  <!--   <form id="frm1">
+<div>
+<label>English.</label><br>
+<input id="bk1" type="number" name="" placeholder="Enter marks here.">
+</div>
+
+
+<div>
+    <label>Urdu.</label><br>
+    <input id="bk2" type="number" name="" placeholder="Enter marks here.">
+    </div>
+
+<div>
+<label>Mathematics.</label><br>
+<input id="bk3" type="number" name="" placeholder="Enter marks here.">
+</div>
+
+
+<div>
+    <label>Physics.</label><br>
+    <input id="bk4" type="number" name="" placeholder="Enter marks here.">
+    </div>
+ 
+
+<div>
+<label>Chemistry.</label><br>
+<input id="bk5" type="number" name="" placeholder="Enter marks here.">
+</div>
+
+
+<div>
+    <label>Biology/Computer.</label><br>
+    <input id="bk6" type="number" name="" placeholder="Enter marks here.">
+    </div>
+
+
+    <div>
+        <label>Islamic Studies.</label><br>
+        <input id="bk7" type="number" name="" placeholder="Enter marks here.">
+        </div>
+
+        <div>
+            <label>Pak studies.</label><br>
+            <input id="bk8" type="number" name="" placeholder="Enter marks here.">
+            </div>
+            <br>
+            <button onclick=" return calc()">Result.</button>
+
+ 
+
+    <table>
+<tr>
+    <td>Total marks.</td>
+    <td>800.</td>
+</tr>
+<tr>
+    <td>Obtained marks.</td>
+    <td id="obt"></td>
+</tr>
+
+<tr>
+    <td>Percentage.</td>
+    <td id="pnt"></td>
+</tr>
+
+<tr>
+    <td>Grade.</td>
+    <td id="gd"></td>
+</tr>
+
+<tr>
+    <td>Remarks.</td>
+    <td id="rm"></td>
+</tr>
+
+    </table>
+
+</form>                      -->
+
+
+
+<!--
+<div id="gradefooter">
+<div class="row">
+    <div class="column">   <img  src=" FaceApp_1616954318165.jpg" style="max-width: 150px; clip-path: circle(); display: inline-block;"> 
+
+   <pre><p id="img1">Name : Hafiz MUHAMMAD
+        Ali Mushtaq.
+    </p></pre>
+   </div>
+
+   <pre><p style="margin-left: 250px; padding-left: -100px;    "><span style="color: white; margin-left: -200px; ">
+    Only for the purpose of semester project.
+ Submitted to : Sir G Khurram Sahib.
+  By : Cadet Muhammad Umar Farooq. 
+        Hafiz Muhammad ali Mushtaq.
+   </span></p></pre>
+
+        <div class="column">
+        <img id="img12" src=" FaceApp_1616954318165.jpg" style="max-width: 150px; clip-path: circle(); display: inline-block;"> 
+   <pre><p id="img10">Name : Hafiz MUHAMMAD
+        Ali Mushtaq.</p></pre>
+</div>
+</div>   -->
+
+<!--
+    <hr>
+    <p style="color: white; text-align: center; ">All rights are reserved.| @2020-2022.</p>    -->
+
+    <!--    <hr>
+    <p style="color: white; text-align: center; ">All rights are reserved.| @2020-2022.</p>   
+
+
+</footer>
+
+</div>    -->
+
+<link rel="stylesheet"   href="first.css">
+    <script src="first.js"></script>
+</body>
+</html>
